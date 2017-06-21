@@ -285,8 +285,13 @@ body {
   text-decoration: none;
   margin: 0; padding: 0;
 }
-#company-logos a:hover img{
-  transform: scale(1.1);
+#company-logos a:hover img.origin,
+#company-logos a img.hover {
+  display: none;
+}
+#company-logos a img.origin,
+#company-logos a:hover img.hover {
+  display: block;
 }
 .mobile-logos {    
   display: none;
